@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,700&subset=latin-ext');
+* {
+	margin: 0 auto;	
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-weight: 700;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+header {
+	background-color: grey;	
+	height: 70px;
+}
+header img {
+	max-height: 70px;	
+}
+header ul {
+	float: right;
+  	margin: 0;
+  	padding: 0;
+  	list-style-type: none;
+}
+header li {
+	display: inline-block;	
+}
+header ul a {
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 70px;
+	padding: 0 20px;
+	font-weight: 900;
+	font-size: 20px;
+	color: black;
+}
+header li:hover {
+	background-color: #5F5F5F;
+	color: #04C2E3;
+}
+.hero {
+	height: 100vh;
+	text-align: center;
+	font-size: 4em;
+	background-image: url(https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+	background-size: cover;
+}
+.hero h1 {
+	margin: 0;
+	transform: translateY(60%);
+}
+.gallery {
+	margin: 30px 0;	
+}
+.gallery .photo {
+	float: left;
+	width: 30%;
+	margin: 0 5% 0 0;
+}
+.gallery .photo:last-of-type {
+	margin: 0;	
+}
+.gallery .photo img {
+	width: 100%;
+	height: auto;
+}
+.map {
+	text-align: center;
+}
+.map iframe {
+	border: 0;
+	width: 1150px;
+	height: 400px;
+}
+footer {
+	text-align: center;
+	height: 8vh;
+	line-height: 8vh;
+	width: 100%;
+	background-color: grey;
+	border-top: solid 2px;
+}
+footer h2 {
+	margin: 0;	
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.hero {
+		background-position: center;
+		font-size: calc(16px + 5vw);
+	}	
+	.gallery .photo {
+		width: 31.66%;
+		margin: 0 2.5% 0 0;	
+	}
+	.gallery .photo:last-of-type {
+		margin: 0;	
+	}
+	.gallery .row {
+		margin: 0 2.5%;	
+	}
+	.map {
+		width: 100%;
+	}	
+	.map iframe {
+	 	width: 96%;
+		height: 50vh;	
+	}
+}
+@media (max-width: 767px) {
+	header img {
+		max-width: 100%;
+		height: auto;
+	}	
+	header nav {
+		text-align: center;	
+	}
+	header ul  {
+		float: none;
+	}
+	header li {
+		display: block;	
+		height: 40px;	
+	}
+	header li a {
+		background-color: #808080;
+		border-radius: 4px;
+	}
+	header li:hover a {
+		background-color: #5F5F5F;
+		color: #04C2E3;
+	}
+	.hero {
+		background-position: center;
+		font-size: calc(16px + 5vw);
+	}
+	.gallery .photo {
+		float: none;
+		width: 100%;
+	}	
+	.gallery img {
+		max-width: 100%;
+		height: auto;
+		padding: 5px;
+	}
+	.map {
+		max-width: 100%;
+	}	
+	.map iframe {
+	 	width: 100%;
+		height: 50vh;
+	}
+}
